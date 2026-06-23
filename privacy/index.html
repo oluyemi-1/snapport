@@ -32,7 +32,7 @@
 <div class="wrap">
 <a class="back" href="../">← Back to Snapport</a>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: 17 June 2026</p>
+<p class="meta">Last updated: 23 June 2026</p>
 
 <p>Snapport is a mobile app published by <strong>Karitec Limited</strong> ("we", "us"). It helps you create passport, visa, and ID photos that meet official document specifications.</p>
 <p>This policy explains what data Snapport handles, how it's processed, and what your rights are. Plain language only.</p>
@@ -71,8 +71,16 @@
   <li>Browsing or search history</li>
 </ul>
 
-<h2>On-device face detection</h2>
-<p>Snapport uses <strong>Google ML Kit's on-device face detection</strong> to check that your photo meets the requirements (correct head size, eye line, single face visible, etc.). The model runs entirely on your device. No image data is sent to Google or anyone else as part of this check.</p>
+<h2>Face data</h2>
+<p>Snapport analyses faces to check that your photo meets passport requirements and to crop it correctly. We want to be completely clear about how this works:</p>
+<ul>
+  <li><strong>What is processed:</strong> Snapport uses <strong>Google ML Kit's on-device Face Detection and Selfie Segmentation</strong> to locate the face in your photo and measure its position and size (face bounding box, eye positions, head angle, and a person/background outline).</li>
+  <li><strong>How it is used:</strong> these measurements are used only, and momentarily, to (1) check compliance with the passport specification (head size, eye line, centring, single face, expression) and (2) crop the photo and replace the background. They are used on your device during the active editing session and for nothing else.</li>
+  <li><strong>Where it is processed and stored:</strong> entirely <strong>on your device</strong>. The ML Kit models run locally. No face data, no facial measurements, and no photo are ever uploaded to Karitec, to Google, or to any server. Snapport has no backend that receives this data.</li>
+  <li><strong>Sharing with third parties:</strong> <strong>none.</strong> Face data is never sold, shared, or transmitted to any third party.</li>
+  <li><strong>Retention:</strong> face data is <strong>not retained.</strong> The facial measurements exist only in memory while you are editing a photo and are discarded as soon as processing finishes or you leave the screen. Snapport does not build, store, or maintain any face database, template, or biometric identifier.</li>
+</ul>
+<p>The on-device face detection is for photo composition only. It is not facial recognition, it does not identify who you are, and it is not used for authentication.</p>
 
 <h2>Sharing the finished photo</h2>
 <p>When you choose to save your finished photo to your Photo Library, or to share it via the share sheet to another app (email, messaging, the Nigeria Immigration Service upload portal, etc.), you are doing that yourself. Snapport does not transmit your photo on your behalf to any third party.</p>
